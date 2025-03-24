@@ -1,0 +1,205 @@
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+---
+Language: Cpp
+BasedOnStyle: LLVM
+Standard: Auto
+Cpp11BracedListStyle: true
+
+ColumnLimit: 140
+ReflowComments: true
+AccessModifierOffset: -2
+# DeriveLineEnding: false # (!deprecated)
+# UseCRLF: false # (!deprecated)
+LineEnding: LF
+UseTab: Never
+TabWidth: 4
+MaxEmptyLinesToKeep: 1
+MainIncludeChar: Quote
+ShortNamespaceLines: 1
+SeparateDefinitionBlocks: Always
+RequiresClausePosition: OwnLine
+RemoveSemicolon: true
+RemoveParentheses: Leave
+RemoveBracesLLVM: false
+InsertNewlineAtEOF: true
+InsertTrailingCommas: Wrapped
+InsertBraces: true
+FixNamespaceComments: true
+EmptyLineBeforeAccessModifier: LogicalBlock
+EmptyLineAfterAccessModifier: Never
+KeepEmptyLines: 
+  AtEndOfFile: false
+  AtStartOfBlock: true
+  AtStartOfFile: true
+BinPackParameters: false
+BinPackArguments: false
+
+# [Sort]
+SortIncludes: CaseInsensitive
+SortUsingDeclarations: LexicographicNumeric
+
+# [Alignment]
+ReferenceAlignment: Pointer
+PointerAlignment: Right
+QualifierAlignment: Custom
+QualifierOrder:
+  ["static", "inline", "friend", "constexpr", "type", "const", "volatile"]
+PackConstructorInitializers: CurrentLine
+AlignOperands: Align
+AlignAfterOpenBracket: Align
+AlignArrayOfStructures: Right
+AlignEscapedNewlines: LeftWithLastLine
+DerivePointerAlignment: false
+AlignConsecutiveAssignments:
+  Enabled: false
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignCompound: true
+  PadOperators: false
+AlignConsecutiveDeclarations:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignCompound: true
+  AlignFunctionPointers: false
+  PadOperators: true
+AlignConsecutiveShortCaseStatements:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignCaseArrows: true
+  AlignCaseColons: true
+AlignConsecutiveTableGenDefinitionColons:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignCompound: true
+  AlignFunctionPointers: false
+  PadOperators: true
+AlignConsecutiveTableGenCondOperatorColons:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignCompound: true
+  AlignFunctionPointers: false
+  PadOperators: true
+AlignConsecutiveMacros:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+AlignTrailingComments:
+  Kind: Always
+  OverEmptyLines: 1
+
+
+# [Indent]
+IndentWidth: 4
+PPIndentWidth: -1
+ContinuationIndentWidth: 4
+ConstructorInitializerIndentWidth: 4
+IndentExternBlock: Indent
+IndentCaseLabels: true
+IndentGotoLabels: true
+IndentCaseBlocks: false
+IndentAccessModifiers: false
+IndentPPDirectives: BeforeHash
+IndentRequiresClause: true
+RequiresExpressionIndentation: OuterScope
+LambdaBodyIndentation: Signature # OuterScope
+NamespaceIndentation: All
+IndentWrappedFunctionNames: false
+BracedInitializerIndentWidth: 2 
+
+IntegerLiteralSeparator:
+  Binary: 4
+  BinaryMinDigits: 6
+  Decimal: 3
+  DecimalMinDigits: 7
+  Hex: 4
+  HexMinDigits: 9
+
+
+# [Allow]
+# AllowAllConstructorInitializersOnNextLine: true # (!deprecated)
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowAllArgumentsOnNextLine: true
+AllowShortBlocksOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortLambdasOnASingleLine: Empty # All, Inline, None
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortEnumsOnASingleLine: false
+AllowShortCompoundRequirementOnASingleLine: true
+AllowShortCaseExpressionOnASingleLine: false
+AllowBreakBeforeNoexceptSpecifier: OnlyWithParen
+
+# [Space]
+SpaceAfterCStyleCast: false
+SpaceAfterLogicalNot: true
+SpaceAfterTemplateKeyword: true
+SpaceBeforeJsonColon: false
+SpaceBeforeCaseColon: false
+SpaceBeforeInheritanceColon: true
+SpaceBeforeCtorInitializerColon: true
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCpp11BracedList: true
+SpaceBeforeRangeBasedForLoopColon: true
+# SpaceBeforeParens: ControlStatements # (!deprecated)
+SpaceBeforeSquareBrackets: false
+SpacesBeforeTrailingComments: 1
+SpaceInEmptyBlock: false
+SpacesInAngles: Never
+# SpacesInCStyleCastParentheses: false # (!deprecated)
+# SpacesInParentheses: false # (!deprecated)
+SpacesInContainerLiterals: false
+SpacesInSquareBrackets: false
+SpaceAroundPointerQualifiers: After
+
+# [Break]
+# AlwaysBreakTemplateDeclarations: true # (!rename)
+BreakTemplateDeclarations: Yes
+# AlwaysBreakAfterReturnType: false # (!rename)
+# BreakAfterReturnType: false # [!change]
+AlwaysBreakBeforeMultilineStrings: false
+BreakBeforeConceptDeclarations: Always
+BreakBeforeBinaryOperators: All
+BreakBeforeTernaryOperators: true
+BreakBeforeBraces: Custom
+BreakAfterAttributes: Never
+BreakStringLiterals: true
+BreakInheritanceList: AfterComma
+BreakFunctionDefinitionParameters: false
+BreakConstructorInitializers: BeforeComma
+BreakArrays: false
+BreakAdjacentStringLiterals: true
+
+CompactNamespaces: false
+# KeepEmptyLinesAtTheStartOfBlocks: false # (!deprecated)
+# KeepEmptyLinesAtEOF: false # (!deprecated)
+
+BraceWrapping:
+  AfterCaseLabel: false
+  AfterClass: false
+  AfterControlStatement: Never
+  AfterEnum: false
+  AfterFunction: false
+  AfterNamespace: false
+  AfterStruct: false
+  AfterUnion: false
+  AfterExternBlock: false
+  BeforeCatch: false
+  BeforeElse: false
+  BeforeLambdaBody: false
+  BeforeWhile: false
+  IndentBraces: false
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false
+  SplitEmptyNamespace: false
+
+IncludeBlocks: Merge
+IncludeCategories:
+  - Regex: 'std\.hpp>$'
+    Priority: 1
+  - Regex: ".*"
+    Priority: 2

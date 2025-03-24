@@ -1,0 +1,159 @@
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+# copied from https://github.com/archibate/vimrc/blob/nvim-2/dotfiles/.clang-format
+---
+Language: Cpp
+BasedOnStyle: LLVM
+Standard: Auto
+# Standard: c++20
+
+ColumnLimit: 140
+AccessModifierOffset: -2
+DeriveLineEnding: false
+UseCRLF: false
+LineEnding: LF
+InsertNewlineAtEOF: true
+UseTab: Never
+TabWidth: 4
+Cpp11BracedListStyle: true
+MaxEmptyLinesToKeep: 1
+
+# [Indent]
+IndentWidth: 4
+# IndentCaseLabels: false
+IndentCaseLabels: true
+IndentCaseBlocks: false
+IndentPPDirectives: AfterHash
+IndentRequiresClause: true
+IndentAccessModifiers: false
+ContinuationIndentWidth: 4
+RequiresExpressionIndentation: OuterScope
+LambdaBodyIndentation: Signature
+# NamespaceIndentation: None
+NamespaceIndentation: All
+PPIndentWidth: 1
+
+# [Sort]
+SortIncludes: false
+# SortIncludes: CaseInsensitive
+SortUsingDeclarations: false
+# SortUsingDeclarations: LexicographicNumeric
+
+IntegerLiteralSeparator:
+  Binary: 4
+  BinaryMinDigits: 6
+  Decimal: 3
+  DecimalMinDigits: 7
+  Hex: 4
+  HexMinDigits: 9
+AlignConsecutiveAssignments:
+  Enabled: false
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignCompound: true
+  PadOperators: false
+AlignConsecutiveDeclarations:
+  Enabled: false
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignCompound: true
+# AlignConsecutiveDeclarations: AcrossEmptyLines
+AlignConsecutiveMacros:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+AlignConsecutiveShortCaseStatements:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignCaseColons: false
+AlignTrailingComments:
+  Kind: Always
+  OverEmptyLines: 1
+AlignOperands: true
+AlignEscapedNewlines: DontAlign
+RequiresClausePosition: OwnLine
+BreakBeforeConceptDeclarations: Always
+BreakBeforeBinaryOperators: true
+PointerAlignment: Right
+ReferenceAlignment: Pointer
+
+# [Allow]
+# AllowShortIfStatementsOnASingleLine: false
+AllowAllConstructorInitializersOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowAllArgumentsOnNextLine: true
+AllowShortBlocksOnASingleLine: true
+# AllowShortBlocksOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortLambdasOnASingleLine: All
+# AllowShortLambdasOnASingleLine: Inline
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortEnumsOnASingleLine: false
+
+PackConstructorInitializers: CurrentLine
+EmptyLineBeforeAccessModifier: LogicalBlock
+EmptyLineAfterAccessModifier: Never
+IndentWrappedFunctionNames: false
+InsertBraces: true
+FixNamespaceComments: true
+
+# [Space]
+SpaceAfterCStyleCast: false
+SpaceAfterLogicalNot: false
+SpaceAfterTemplateKeyword: true
+SpaceBeforeInheritanceColon: true
+SpaceBeforeCtorInitializerColon: true
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCaseColon: false
+SpaceBeforeCpp11BracedList: false
+# SpaceBeforeRangeBasedForLoopColon: false
+SpaceBeforeRangeBasedForLoopColon: true
+SpaceBeforeParens: ControlStatements
+SpacesBeforeTrailingComments: 1
+SpacesInAngles: false
+SpacesInCStyleCastParentheses: false
+SpacesInContainerLiterals: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+SpaceAroundPointerQualifiers: After
+
+AlwaysBreakTemplateDeclarations: true
+# BreakTemplateDeclarations: Yes
+SeparateDefinitionBlocks: Always
+BreakBeforeBraces: Custom
+BreakAfterAttributes: Never
+BraceWrapping:
+  AfterEnum: false
+  AfterClass: false
+  AfterStruct: false
+  AfterUnion: false
+  AfterFunction: false
+  AfterControlStatement: false
+  AfterCaseLabel: false
+  AfterNamespace: false
+  AfterExternBlock: false
+  BeforeLambdaBody: false
+  BeforeWhile: false
+  IndentBraces: false
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false
+  SplitEmptyNamespace: false
+  BeforeCatch: false
+  BeforeElse: false
+CompactNamespaces: false
+KeepEmptyLinesAtTheStartOfBlocks: false
+KeepEmptyLinesAtEOF: false
+# IncludeBlocks: Merge
+IncludeBlocks: Preserve
+DerivePointerAlignment: false
+ReflowComments: true
+QualifierAlignment: Custom
+QualifierOrder:
+  ["static", "inline", "friend", "constexpr", "type", "const", "volatile"]
+IncludeCategories:
+  - Regex: 'std\.hpp>$'
+    Priority: 1
+  - Regex: ".*"
+    Priority: 2
