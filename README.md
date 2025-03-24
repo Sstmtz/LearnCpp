@@ -33,7 +33,7 @@
   - [ld](https://man.archlinux.org/man/ld.1.en): for linking OBJ files.
   - [lld](https://lld.llvm.org/): for linking OBJ files.
 
-Please refer to [this file](./_tools/references.md) for information about some external tools I use.
+Please refer to [this file](./_tools/REFERENCES.md) for information about some external tools I use.
 
 ---
 
@@ -41,7 +41,7 @@ Please refer to [this file](./_tools/references.md) for information about some e
     <img src="https://readme-typing-svg.herokuapp.com?font=Teko&size=30&pause=1000&color=57C6F7&background=342CFF00&vCenter=true&width=435&height=30&lines=How+to+use" alt="Typing SVG" />
 </a>
 
-You only need to specify the `run.sh` script in the directory to compile and run. 
+You only need to specify the `run.sh` script in the directory to compile and run.
 
 > [!WARNING]
 > Please note that since most of them are just demo programs, and some new language features or libraries are not supported by the compiler, they may not be able to run.
@@ -53,4 +53,3 @@ You only need to specify the `run.sh` script in the directory to compile and run
 </a>
 
 Using the [MIT License](LICENSE)
-
