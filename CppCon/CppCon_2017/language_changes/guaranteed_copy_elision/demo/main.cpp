@@ -14,8 +14,8 @@ auto grab_lock_(std::mutex &m) {
 
 int main() {
     std::mutex mtx;
-    auto guard = grab_lock(mtx);
+    auto       guard = grab_lock(mtx);
 
     std::mutex mtx_;
-    auto guard_ = grab_lock_(mtx_);
+    auto       guard_ = grab_lock_(mtx_);
 }

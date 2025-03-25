@@ -3,9 +3,9 @@
 #include <string>
 
 struct person {
-    int m_id;
+    int         m_id;
     std::string m_name;
-    int m_age;
+    int         m_age;
 
     int const &get_id() {
         return m_id;

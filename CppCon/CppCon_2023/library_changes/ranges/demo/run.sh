@@ -7,6 +7,7 @@ cmake --build build
 # # ./build/main
 # # ./build/main2
 ./build/main3
+./build/main4
 
 # clang++ -std=c++23 main3.cpp -o output/main3
 # ./output/main3

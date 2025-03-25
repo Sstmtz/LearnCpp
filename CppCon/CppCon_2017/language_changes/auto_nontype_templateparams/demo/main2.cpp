@@ -30,8 +30,8 @@ constexpr dynamic_extent dyn_ = {};
 
 int main() {
     span<double, 64> d;
-    span<int, dyn> i;
+    span<int, dyn>   i;
 
     span_<double, 64> d_;
-    span_<int, dyn_> i_;
+    span_<int, dyn_>  i_;
 }

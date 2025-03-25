@@ -12,20 +12,16 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
 set(CMAKE_C_COMPILER clang)
 set(CMAKE_CXX_COMPILER clang++)
 
+# set(CMAKE_C_COMPILER gcc)
+# set(CMAKE_CXX_COMPILER g++)
+
 add_compile_options(
     #-Werror
     -Wall
     -Wextra
 )
 
-# file(GLOB sources "*.cpp")
-set(sources
-    # main.cpp
-    # main2.cpp
-    main3.cpp
-    main4.cpp
-)
-
+file(GLOB sources "*.cpp")
 foreach(source IN LISTS sources)
     get_filename_component(name ${source} NAME_WE)
     add_executable(${name} ${source})

@@ -8,8 +8,8 @@ std::enable_if_t<std::is_constructible_v<T, Args...>, std::unique_ptr<T>> make_u
 }
 
 template <typename T, typename... Args>
-std::enable_if_t<!std::is_constructible_v<T, Args...>, std::unique_ptr<T>> make_unique(Args &&...a) {
-    return std::unique_ptr(new T{std::forward<Args>(a)...});
+std::enable_if_t<! std::is_constructible_v<T, Args...>, std::unique_ptr<T>> make_unique(Args &&...a) {
+    return std::unique_ptr(new T {std::forward<Args>(a)...});
 }
 
 // since C++17:
@@ -18,7 +18,7 @@ auto make_unique(Args &&...a) {
     if constexpr (std::is_constructible_v<T, Args...>) {
         return std::unique_ptr(new T(std::forward<Args>(a)...));
     } else {
-        return std::unique_ptr(new T{std::forward<Args>(a)...});
+        return std::unique_ptr(new T {std::forward<Args>(a)...});
     }
 }
 

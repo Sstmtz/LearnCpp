@@ -67,7 +67,7 @@ std::string string_poo::pop2(std::size_t new_cap) { // please ignore this undecl
 // combine with if-statement initialization
 template <typename Key, typename F>
 void emplace_or_throw(std::set<Key> &m, Key &&k, F f) {
-    if (auto [it, s] = m.emplace(std::forward<Key>(k)); !s) {
+    if (auto [it, s] = m.emplace(std::forward<Key>(k)); ! s) {
         throw /* ... */;
     } else {
         f(*it);

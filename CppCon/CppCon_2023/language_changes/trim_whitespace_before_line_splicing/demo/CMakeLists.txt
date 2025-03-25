@@ -18,14 +18,7 @@ add_compile_options(
     -Wextra
 )
 
-# file(GLOB sources "*.cpp")
-set(sources
-    # main.cpp
-    # main2.cpp
-    main3.cpp
-    main4.cpp
-)
-
+file(GLOB sources "*.cpp")
 foreach(source IN LISTS sources)
     get_filename_component(name ${source} NAME_WE)
     add_executable(${name} ${source})
