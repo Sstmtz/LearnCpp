@@ -1,0 +1,62 @@
+[
+{
+  "directory": "/home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/build",
+  "command": "clang++ -Dmain3_EXPORTS -std=c++20 -Wall -Wextra -o CMakeFiles/main3.dir/main3.cpp.o -c /home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/main3.cpp",
+  "file": "/home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/main3.cpp",
+  "output": "CMakeFiles/main3.dir/main3.cpp.o"
+},
+{
+  "directory": "/home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/build",
+  "command": "clang++ -Dmain7_EXPORTS -std=c++20 -Wall -Wextra -o CMakeFiles/main7.dir/main7.cpp.o -c /home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/main7.cpp",
+  "file": "/home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/main7.cpp",
+  "output": "CMakeFiles/main7.dir/main7.cpp.o"
+},
+{
+  "directory": "/home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/build",
+  "command": "clang++ -Dmain9_EXPORTS -std=c++20 -Wall -Wextra -o CMakeFiles/main9.dir/main9.cpp.o -c /home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/main9.cpp",
+  "file": "/home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/main9.cpp",
+  "output": "CMakeFiles/main9.dir/main9.cpp.o"
+},
+{
+  "directory": "/home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/build",
+  "command": "clang++ -Dmain10_EXPORTS -std=c++20 -Wall -Wextra -o CMakeFiles/main10.dir/main10.cpp.o -c /home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/main10.cpp",
+  "file": "/home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/main10.cpp",
+  "output": "CMakeFiles/main10.dir/main10.cpp.o"
+},
+{
+  "directory": "/home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/build",
+  "command": "clang++ -Dmain11_EXPORTS -std=c++20 -Wall -Wextra -o CMakeFiles/main11.dir/main11.cpp.o -c /home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/main11.cpp",
+  "file": "/home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/main11.cpp",
+  "output": "CMakeFiles/main11.dir/main11.cpp.o"
+},
+{
+  "directory": "/home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/build",
+  "command": "clang++ -Dmain14_EXPORTS -std=c++20 -Wall -Wextra -o CMakeFiles/main14.dir/main14.cpp.o -c /home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/main14.cpp",
+  "file": "/home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/main14.cpp",
+  "output": "CMakeFiles/main14.dir/main14.cpp.o"
+},
+{
+  "directory": "/home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/build",
+  "command": "clang++ -Dmain15_EXPORTS -std=c++20 -Wall -Wextra -o CMakeFiles/main15.dir/main15.cpp.o -c /home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/main15.cpp",
+  "file": "/home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/main15.cpp",
+  "output": "CMakeFiles/main15.dir/main15.cpp.o"
+},
+{
+  "directory": "/home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/build",
+  "command": "clang++ -Dmain16_EXPORTS -std=c++20 -Wall -Wextra -o CMakeFiles/main16.dir/main16.cpp.o -c /home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/main16.cpp",
+  "file": "/home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/main16.cpp",
+  "output": "CMakeFiles/main16.dir/main16.cpp.o"
+},
+{
+  "directory": "/home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/build",
+  "command": "clang++ -Dmain19_EXPORTS -std=c++20 -Wall -Wextra -o CMakeFiles/main19.dir/main19.cpp.o -c /home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/main19.cpp",
+  "file": "/home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/main19.cpp",
+  "output": "CMakeFiles/main19.dir/main19.cpp.o"
+},
+{
+  "directory": "/home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/build",
+  "command": "clang++ -Dmain21_EXPORTS -std=c++20 -Wall -Wextra -o CMakeFiles/main21.dir/main21.cpp.o -c /home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/main21.cpp",
+  "file": "/home/stmt/Projects/LearnCpp/CppCon/CppCon_2024/Back-to-Basics-Concepts/01/main21.cpp",
+  "output": "CMakeFiles/main21.dir/main21.cpp.o"
+}
+]
