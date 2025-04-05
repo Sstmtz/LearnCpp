@@ -4,7 +4,7 @@ project(CppCon LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_EXTENSIONS OFF) # use `-std=c++20` instead of `--std=gnu++20`
+set(CMAKE_CXX_EXTENSIONS OFF)
 
 set(CMAKE_EXECUTABLE_ENABLE_EXPORTS TRUE)
 set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
@@ -18,7 +18,11 @@ add_compile_options(
     -Wextra
 )
 
-file(GLOB sources "*.cpp")
+set(sources
+    main.cpp
+)
+
+# file(GLOB sources "*.cpp")
 foreach(source IN LISTS sources)
     get_filename_component(name ${source} NAME_WE)
     add_executable(${name} ${source})
