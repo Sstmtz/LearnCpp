@@ -42,7 +42,7 @@ set(sources
     main21.cpp
     main22.cpp
     # main23.cpp
-    main24.cpp
+    # main24.cpp
 )
 
 # file(GLOB sources "*.cpp")
