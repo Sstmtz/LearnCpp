@@ -20,5 +20,5 @@ InlayHints:
   Designators: No # `designators in aggregate initialization`
   ParameterNames: No # `parameter names in function calls`
   DeducedTypes: No # `deduced types`
-  DefaultArguments: Yes # `default arguments`
+  DefaultArguments: No # `default arguments`
   TypeNameLimit: 24 # Character limit for type hints
