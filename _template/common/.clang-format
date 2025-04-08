@@ -1,4 +1,5 @@
 # https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+# [clang-format-configurator](https://clang-format-configurator.site/): for generating a clang-format configuration file.
 ---
 Language: Cpp
 BasedOnStyle: LLVM # LLVM, Google, Chromium, Mozilla, Webkit, Microsoft, GNU
@@ -40,11 +41,8 @@ SortIncludes: CaseInsensitive
 SortUsingDeclarations: LexicographicNumeric
 
 # [Alignment]
-ReferenceAlignment: Pointer
 PointerAlignment: Right
-QualifierAlignment: Custom
-QualifierOrder:
-  ["static", "inline", "friend", "constexpr", "type", "const", "volatile"]
+ReferenceAlignment: Pointer
 PackConstructorInitializers: CurrentLine # Never, CurrentLine, ...
 AlignOperands: Align
 AlignAfterOpenBracket: Align
@@ -58,18 +56,18 @@ AlignConsecutiveAssignments:
   AlignCompound: true
   PadOperators: false
 AlignConsecutiveDeclarations:
-  Enabled: true
+  Enabled: false
   AcrossEmptyLines: false
   AcrossComments: false
   AlignCompound: true
   AlignFunctionPointers: false
-  PadOperators: true
+  PadOperators: false
 AlignConsecutiveShortCaseStatements:
   Enabled: true
   AcrossEmptyLines: false
   AcrossComments: false
   AlignCaseArrows: true
-  AlignCaseColons: true
+  AlignCaseColons: false
 AlignConsecutiveTableGenDefinitionColons:
   Enabled: true
   AcrossEmptyLines: false
@@ -85,17 +83,16 @@ AlignConsecutiveTableGenCondOperatorColons:
   AlignFunctionPointers: false
   PadOperators: true
 AlignConsecutiveMacros:
-  Enabled: false
+  Enabled: true
   AcrossEmptyLines: false
   AcrossComments: false
 AlignTrailingComments:
   Kind: Always
   OverEmptyLines: 1
 
-
 # [Indent]
 IndentWidth: 4
-PPIndentWidth: -1
+PPIndentWidth: 1
 ContinuationIndentWidth: 4
 ConstructorInitializerIndentWidth: 4
 IndentExternBlock: Indent
@@ -107,18 +104,9 @@ IndentPPDirectives: BeforeHash
 IndentRequiresClause: true
 RequiresExpressionIndentation: OuterScope # Keyword, OuterScope
 LambdaBodyIndentation: Signature # Signature, OuterScope
-NamespaceIndentation: All
+NamespaceIndentation: All # None, Inner, All
 IndentWrappedFunctionNames: false
 BracedInitializerIndentWidth: 2
-
-IntegerLiteralSeparator:
-  Binary: 4
-  BinaryMinDigits: 6
-  Decimal: 3
-  DecimalMinDigits: 7
-  Hex: 4
-  HexMinDigits: 9
-
 
 # [Allow]
 # AllowAllConstructorInitializersOnNextLine: true # (!deprecated)
@@ -182,7 +170,7 @@ CompactNamespaces: false
 BraceWrapping:
   AfterCaseLabel: false
   AfterClass: false
-  AfterControlStatement: Never
+  AfterControlStatement: false
   AfterEnum: false
   AfterFunction: false
   AfterNamespace: false
@@ -197,6 +185,18 @@ BraceWrapping:
   SplitEmptyFunction: false
   SplitEmptyRecord: false
   SplitEmptyNamespace: false
+
+IntegerLiteralSeparator:
+  Binary: 4
+  BinaryMinDigits: 6
+  Decimal: 3
+  DecimalMinDigits: 7
+  Hex: 4
+  HexMinDigits: 9
+
+QualifierAlignment: Custom
+QualifierOrder:
+  ["static", "inline", "friend", "constexpr", "type", "const", "volatile"]
 
 IncludeBlocks: Merge
 IncludeCategories:
