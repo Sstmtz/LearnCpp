@@ -1,0 +1,49 @@
+# https://clangd.llvm.org/config
+CompileFlags:
+  Add:
+    - --no-cuda-version-check
+    - -Wno-unknown-warning-option
+    - -D__clangd__ # add your custom flags
+  Remove:
+    - -forward-unknown-to-host-compiler
+    - -expt-*
+    - --expt-*
+    - -gencode*
+    - --generate-code*
+    - -Xfatbin*
+    - -arch=*
+    - -rdc=*
+    - -mno-*
+InlayHints:
+  Enabled: Yes # enables/disables the inlay-hints feature for all kinds
+  BlockEnd: No # `block end comment`
+  Designators: No # `designators in aggregate initialization`
+  ParameterNames: Yes # `parameter names in function calls`
+  DeducedTypes: Yes # `deduced types`
+  DefaultArguments: No # `default arguments`
+  TypeNameLimit: 24 # Character limit for type hints
+Diagnostics:
+  ClangTidy:
+    Add:
+      - cppcoreguidelines*
+      - modernize*
+      - performance*
+      - misc*
+      - readability*
+    Remove: 
+      - cppcoreguidelines-avoid-magic-numbers # (alias)
+      - cppcoreguidelines-avoid-non-const-global-variables
+      - cppcoreguidelines-pro-type-vararg
+      - readability-magic-numbers
+      - readability-identifier-length
+      - modernize-use-trailing-return-type
+      - modernize-use-std-print
+      - modernize-use-emplace
+      - misc-use-internal-linkage 
+    CheckOptions:
+      readability-identifier-naming.ClassCase: CamelCase
+      readability-identifier-naming.EnumCase: CamelCase
+      readability-identifier-naming.NamespaceCase: CamelCase
+      readability-identifier-naming.StructCase: CamelCase
+    FastCheckFilter: Strict # Strict(default), Loose, None
+  UnusedIncludes: Strict
