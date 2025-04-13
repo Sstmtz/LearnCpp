@@ -2,12 +2,15 @@ cmake_minimum_required(VERSION 3.12)
 
 project(LearnCpp LANGUAGES CXX)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 set(CMAKE_EXECUTABLE_ENABLE_EXPORTS ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON) # for generating compile_command.json
+
+set(CMAKE_C_COMPILER clang)
+set(CMAKE_CXX_COMPILER clang++)
 
 # enable color diagnostics
 if(CMAKE_VERSION VERSION_LESS "3.24")
@@ -16,8 +19,13 @@ else()
     set(CMAKE_COLOR_DIAGNOSTICS ON)
 endif()
 
-set(CMAKE_C_COMPILER clang)
-set(CMAKE_CXX_COMPILER clang++)
+# add link flags
+if(CMAKE_VERSION VERSION_LESS "3.29")
+    set(CMAKE_CXX_LINK_EXECUTABLE "${CMAKE_CXX_LINK_EXECUTABLE} -fuse-ld=lld")
+    set(CMAKE_C_LINK_EXECUTABLE "${CMAKE_C_LINK_EXECUTABLE} -fuse-ld=lld")
+else()
+    set(CMAKE_LINKER_TYPE LLD)
+endif()
 
 add_compile_options(
     #-Werror

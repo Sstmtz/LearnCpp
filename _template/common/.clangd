@@ -32,9 +32,14 @@ Diagnostics:
       - readability*
     Remove: 
       - cppcoreguidelines-avoid-magic-numbers # (alias)
+      - cppcoreguidelines-avoid-non-const-global-variables
+      - cppcoreguidelines-pro-type-vararg
       - readability-magic-numbers
       - readability-identifier-length
       - modernize-use-trailing-return-type
+      - modernize-use-std-print
+      - modernize-use-emplace
+      - misc-use-internal-linkage 
     CheckOptions:
       readability-identifier-naming.ClassCase: CamelCase
       readability-identifier-naming.EnumCase: CamelCase
