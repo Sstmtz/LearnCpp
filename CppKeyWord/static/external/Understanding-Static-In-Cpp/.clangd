@@ -1,0 +1,24 @@
+# https://clangd.llvm.org/config
+CompileFlags:
+  Add:
+    - --no-cuda-version-check
+    - -Wno-unknown-warning-option
+    - -D__clangd__ # add your custom flags
+  Remove:
+    - -forward-unknown-to-host-compiler
+    - -expt-*
+    - --expt-*
+    - -gencode*
+    - --generate-code*
+    - -Xfatbin*
+    - -arch=*
+    - -rdc=*
+    - -mno-*
+InlayHints:
+  Enabled: Yes # enables/disables the inlay-hints feature for all kinds
+  BlockEnd: No # `block end comment`
+  Designators: No # `designators in aggregate initialization`
+  ParameterNames: No # `parameter names in function calls`
+  DeducedTypes: No # `deduced types`
+  DefaultArguments: No # `default arguments`
+  TypeNameLimit: 24 # Character limit for type hints
