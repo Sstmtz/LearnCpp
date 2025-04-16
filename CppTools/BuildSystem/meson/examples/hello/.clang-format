@@ -1,0 +1,26 @@
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+# [clang-format-configurator](https://clang-format-configurator.site/): for generating a clang-format configuration file.
+---
+Language: C
+BasedOnStyle: LLVM # LLVM, Google, Chromium, Mozilla, Webkit, Microsoft, GNU
+Standard: Auto 
+Cpp11BracedListStyle: true
+
+DisableFormat: false
+ColumnLimit: 100
+ReflowComments: true
+AccessModifierOffset: -4
+LineEnding: LF
+UseTab: Never
+TabWidth: 4
+
+# [Sort]
+SortIncludes: CaseInsensitive
+SortUsingDeclarations: LexicographicNumeric
+
+# [Alignment]
+PointerAlignment: Right
+ReferenceAlignment: Pointer
+
+# [Indent]
+IndentWidth: 4
