@@ -1,19 +1,21 @@
 # https://clangd.llvm.org/config
 CompileFlags:
-  Add:
-    - --no-cuda-version-check
-    - -Wno-unknown-warning-option
-    - -D__clangd__ # add your custom flags
-  Remove:
-    - -forward-unknown-to-host-compiler
-    - -expt-*
-    - --expt-*
-    - -gencode*
-    - --generate-code*
-    - -Xfatbin*
-    - -arch=*
-    - -rdc=*
-    - -mno-*
+  Add: [
+    --no-cuda-version-check,
+    -Wno-unknown-warning-option,
+    -D__clangd__ # add your custom flags
+  ]
+  Remove: [
+     -forward-unknown-to-host-compiler,
+     -expt-*,
+     --expt-*,
+     -gencode*,
+     --generate-code*,
+     -Xfatbin*,
+     -arch=*,
+     -rdc=*,
+     -mno-*
+    ]
 InlayHints:
   Enabled: Yes # enables/disables the inlay-hints feature for all kinds
   BlockEnd: No # `block end comment`
@@ -35,6 +37,7 @@ Diagnostics:
       - cppcoreguidelines-avoid-non-const-global-variables
       - cppcoreguidelines-pro-type-vararg
       - readability-magic-numbers
+      - readability-identifier-naming
       - readability-identifier-length
       - modernize-use-trailing-return-type
       - modernize-use-std-print
