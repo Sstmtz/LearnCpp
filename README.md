@@ -21,11 +21,12 @@
 </div>
 
 <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Teko&size=30&pause=1000&color=1CF72C&background=342CFF00&vCenter=true&width=435&height=30&lines=Tools" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Teko&size=30&pause=1000&color=1CF72C&background=342CFF00&vCenter=true&width=435&height=40&lines=Tools" alt="Typing SVG" />
 </a>
 
 - Building System Tools
   - [CMake](https://gitlab.kitware.com/cmake/cmake): for projects building.
+  - [Meson](https://github.com/mesonbuild/meson): for projects building.
 - Compilers
   - [GCC](https://gitlab.com/gnutools/gcc): for compiling C++ code.
   - [Clang](https://clang.llvm.org/): for compiling C++ code.
@@ -38,7 +39,7 @@ Please refer to [this file](./_tools/REFERENCES.md) for information about some e
 ---
 
 <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Teko&size=30&pause=1000&color=57C6F7&background=342CFF00&vCenter=true&width=435&height=30&lines=How+to+use" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Teko&size=30&pause=1000&color=57C6F7&background=342CFF00&vCenter=true&width=435&height=40&lines=How+to+use" alt="Typing SVG" />
 </a>
 
 You only need to specify the `run.sh` script in the directory to compile and run.
@@ -49,7 +50,16 @@ You only need to specify the `run.sh` script in the directory to compile and run
 ---
 
 <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Teko&size=30&pause=1000&color=C7B5F7&background=342CFF00&vCenter=true&width=435&height=25&lines=LICENSE" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Teko&size=30&pause=1000&color=42BE65&background=342CFF00&vCenter=true&width=435&height=40&lines=Resource+Lists" alt="Typing SVG" /></a>
+
+- [C++ Reference](https://en.cppreference.com/w/): C++ standard offical documentation.
+- [Hacking C++](https://hackingcpp.com/): A collection of various C++ learning resources.
+- [Learn C++](https://www.learncpp.com/): A free website devoted to teaching you how to program in modern C++.
+
+---
+
+<a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Teko&size=30&pause=1000&color=C7B5F7&background=342CFF00&vCenter=true&width=435&height=40&lines=LICENSE" alt="Typing SVG" />
 </a>
 
 Using the [MIT License](LICENSE)
