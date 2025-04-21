@@ -31,7 +31,8 @@ Please refer to [this file](./_tools/REFERENCES.md) for information about some e
 <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.herokuapp.com?font=Teko&size=30&pause=1000&color=6F62BE&background=342CFF00&vCenter=true&width=435&height=40&lines=Template" alt="Typing SVG" /></a>
 
-Here are some template configuration files used for setting up projects. You can copy them to the root directory of your project and modify them according to your needs.
+Here are some template configuration files used for setting up projects.
+You can copy them to the root directory of your project and modify them according to your needs.
 
 Please refer to the files in the [_template/common](./_template/common/) directory for specifics.
 
@@ -42,7 +43,8 @@ Please refer to the files in the [_template/common](./_template/common/) directo
 </a>
 
 > [!WARNING]
-> Please note that since most of them are just demo programs, and some new language features or libraries are not supported by the compiler, they may not be able to run.
+> Please note that since most of them are just demo programs, and some new language features or libraries are not supported by the compiler,
+they may not be able to run.
 
 You need to run the `run.sh` script located in the specified directory.
 
