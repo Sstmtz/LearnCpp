@@ -1,4 +1,6 @@
 # https://clangd.llvm.org/config
+# https://clangd.llvm.org/guides/include-cleaner
+
 CompileFlags:
   Add: [
     --no-cuda-version-check,
@@ -15,7 +17,7 @@ CompileFlags:
      -arch=*,
      -rdc=*,
      -mno-*
-    ]
+  ]
 InlayHints:
   Enabled: Yes # enables/disables the inlay-hints feature for all kinds
   BlockEnd: No # `block end comment`
@@ -49,4 +51,5 @@ Diagnostics:
       readability-identifier-naming.NamespaceCase: CamelCase
       readability-identifier-naming.StructCase: CamelCase
     FastCheckFilter: Strict # Strict(default), Loose, None
-  UnusedIncludes: Strict
+  UnusedIncludes: Strict # Strict(default), None
+  MissingIncludes: Strict # Strict(default), None
