@@ -7,3 +7,4 @@
 - [Back to Basics: C++ API Design - Jason Turner - CppCon 2022](https://www.youtube.com/watch?v=zL-vn_pGGgY)
 - [Back to Basics: The C++ Core Guidelines - Rainer Grimm - CppCon 2022](https://www.youtube.com/watch?v=UONLB7wBVSc)
 - [Back to Basics: Cpp Value Semantics - Klaus Iglberger - CppCon 2022](https://www.youtube.com/watch?v=G9MxNwUoSt0)
+- [Back to Basics: C++ Smart Pointers - David Olsen - CppCon 2022](https://www.youtube.com/watch?v=YokY6HzLkXs)

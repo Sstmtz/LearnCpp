@@ -1,0 +1,7 @@
+# [neocmakelsp] https://github.com/neocmakelsp/
+
+command_upcase = "ignore" # "lowercase", "upcase"
+# cmake-lint integration
+enable_external_cmake_lint = false # true to use external cmake-lint
+# internal lint
+line_max_words = 80 # this define the max words in a line
