@@ -1,0 +1,47 @@
+# CppCon 2017
+CppCon/CppCon_2017/**/.cache
+CppCon/CppCon_2017/**/build
+CppCon/CppCon_2017/**/output
+# CppCon/CppCon_2017/overview.md
+
+# CppCon 2020
+CppCon/CppCon_2020/**/.cache
+CppCon/CppCon_2020/**/build
+CppCon/CppCon_2020/**/output
+# CppCon/CppCon_2020/overview.md
+
+# CppCon 2021
+CppCon/CppCon_2021/**/.cache
+CppCon/CppCon_2021/**/build
+CppCon/CppCon_2021/**/output
+# CppCon/CppCon_2021/overview.md
+
+# CppCon 2022
+CppCon/CppCon_2022/**/.cache
+CppCon/CppCon_2022/**/build
+CppCon/CppCon_2022/**/output
+# CppCon/CppCon_2022/overview.md
+
+# CppCon 2023
+CppCon/CppCon_2023/**/.cache
+CppCon/CppCon_2023/**/build
+CppCon/CppCon_2023/**/output
+# CppCon/CppCon_2023/overview.md
+
+# CppCon 2024
+CppCon/CppCon_2024/**/.cache
+CppCon/CppCon_2024/**/build
+CppCon/CppCon_2024/**/output
+# CppCon/CppCon_2024/overview.md
+
+# Cpp KeyWord
+CppKeyWord/**/.cache
+CppKeyWord/**/build
+CppKeyWord/**/output
+
+# Cpp Tools
+CppTools/**/.cache
+CppTools/**/build
+CppTools/**/output
+
+.markdownlint.yaml
