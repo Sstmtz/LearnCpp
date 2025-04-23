@@ -24,7 +24,7 @@
     <img src="https://readme-typing-svg.herokuapp.com?font=Teko&size=30&pause=1000&color=1CF72C&background=342CFF00&vCenter=true&width=435&height=40&lines=Tools" alt="Typing SVG" />
 </a>
 
-Please refer to [this file](./_tools/REFERENCES.md) for information about some external tools I use.
+Please refer to [this file](./tools/REFERENCES.md) for information about some external tools I use.
 
 ---
 
@@ -34,7 +34,7 @@ Please refer to [this file](./_tools/REFERENCES.md) for information about some e
 Here are some template configuration files used for setting up projects.
 You can copy them to the root directory of your project and modify them according to your needs.
 
-Please refer to the files in the [_template/common](./_template/common/) directory for specifics.
+Please refer to the files in the [template/common](./_template/common/) directory for specifics.
 
 ---
 
