@@ -34,7 +34,7 @@ Please refer to [this file](./tools/REFERENCES.md) for information about some ex
 Here are some template configuration files used for setting up projects.
 You can copy them to the root directory of your project and modify them according to your needs.
 
-Please refer to the files in the [template/common](./_template/common/) directory for specifics.
+Please refer to the files in the [template/common](./template/common/) directory for specifics.
 
 ---
 
