@@ -44,4 +44,5 @@ CppTools/**/.cache
 CppTools/**/build
 CppTools/**/output
 
+# misc
 .markdownlint.yaml
