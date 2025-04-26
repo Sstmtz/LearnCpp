@@ -56,6 +56,7 @@ You need to run the `run.sh` script located in the specified directory.
 - [C++ Reference](https://en.cppreference.com/w/): C++ standard offical documentation.
 - [Hacking C++](https://hackingcpp.com/): A collection of various C++ learning resources.
 - [Learn C++](https://www.learncpp.com/): A free website devoted to teaching you how to program in modern C++.
+- [Modern C++ Idioms](https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms): A open-content book, presenting modern C++ idioms to programmers who have moderate level of familiarity with C++.
 
 ---
 
