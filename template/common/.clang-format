@@ -10,8 +10,6 @@ DisableFormat: false
 ColumnLimit: 100
 ReflowComments: true
 AccessModifierOffset: -4
-# DeriveLineEnding: false # (!deprecated)
-# UseCRLF: false # (!deprecated)
 LineEnding: LF
 UseTab: Never
 TabWidth: 4
@@ -20,9 +18,9 @@ MainIncludeChar: Quote
 ShortNamespaceLines: 1
 SeparateDefinitionBlocks: Always
 RequiresClausePosition: OwnLine
-RemoveSemicolon: true
+RemoveSemicolon: false # (!warning)
 RemoveParentheses: Leave
-RemoveBracesLLVM: false
+RemoveBracesLLVM: false # (!warning)
 InsertNewlineAtEOF: true
 InsertTrailingCommas: Wrapped
 InsertBraces: true
@@ -31,10 +29,12 @@ EmptyLineBeforeAccessModifier: LogicalBlock
 EmptyLineAfterAccessModifier: Never
 KeepEmptyLines: 
   AtEndOfFile: false
-  AtStartOfBlock: true
+  AtStartOfBlock: false
   AtStartOfFile: false
 BinPackParameters: false
 BinPackArguments: false
+# DeriveLineEnding: false # (!deprecated)
+# UseCRLF: false # (!deprecated)
 
 # [Sort]
 SortIncludes: CaseInsensitive
@@ -43,7 +43,11 @@ SortUsingDeclarations: LexicographicNumeric
 # [Alignment]
 PointerAlignment: Right
 ReferenceAlignment: Pointer
-PackConstructorInitializers: CurrentLine # Never, CurrentLine, ...
+QualifierAlignment: Custom
+QualifierOrder:
+  ["static", "inline", "friend", "constexpr", "type", "const", "volatile"]
+
+PackConstructorInitializers: Never # Never, CurrentLine, ...
 AlignOperands: Align
 AlignAfterOpenBracket: Align
 AlignArrayOfStructures: Right
@@ -95,21 +99,25 @@ IndentWidth: 4
 PPIndentWidth: 1
 ContinuationIndentWidth: 4
 ConstructorInitializerIndentWidth: 4
+
 IndentExternBlock: Indent
+IndentCaseBlocks: false
+
 IndentCaseLabels: true
 IndentGotoLabels: true
-IndentCaseBlocks: false
+
+IndentPPDirectives: BeforeHash # None, AfterHash, BeforeHash
 IndentAccessModifiers: false
-IndentPPDirectives: BeforeHash
 IndentRequiresClause: true
 RequiresExpressionIndentation: OuterScope # Keyword, OuterScope
+
 LambdaBodyIndentation: Signature # Signature, OuterScope
 NamespaceIndentation: All # None, Inner, All
+
 IndentWrappedFunctionNames: false
 BracedInitializerIndentWidth: 2
 
 # [Allow]
-# AllowAllConstructorInitializersOnNextLine: true # (!deprecated)
 AllowAllParametersOfDeclarationOnNextLine: true
 AllowAllArgumentsOnNextLine: true
 AllowShortBlocksOnASingleLine: Empty
@@ -122,34 +130,37 @@ AllowShortEnumsOnASingleLine: false
 AllowShortCompoundRequirementOnASingleLine: true
 AllowShortCaseExpressionOnASingleLine: false
 AllowBreakBeforeNoexceptSpecifier: OnlyWithParen
+# AllowAllConstructorInitializersOnNextLine: true # (!deprecated)
 
 # [Space]
 SpaceAfterCStyleCast: false
-SpaceAfterLogicalNot: true
+SpaceAfterLogicalNot: false
 SpaceAfterTemplateKeyword: true
-SpaceBeforeJsonColon: false
-SpaceBeforeCaseColon: false
-SpaceBeforeInheritanceColon: true
-SpaceBeforeCtorInitializerColon: true
-SpaceBeforeAssignmentOperators: true
-SpaceBeforeCpp11BracedList: true
-SpaceBeforeRangeBasedForLoopColon: true
-# SpaceBeforeParens: ControlStatements # (!deprecated)
-SpaceBeforeSquareBrackets: false
-SpacesBeforeTrailingComments: 1
-SpaceInEmptyBlock: false
-SpacesInAngles: Never
-# SpacesInCStyleCastParentheses: false # (!deprecated)
-# SpacesInParentheses: false # (!deprecated)
-SpacesInContainerLiterals: false
-SpacesInSquareBrackets: false
 SpaceAroundPointerQualifiers: After
 
+SpaceBeforeAssignmentOperators: true
+SpacesBeforeTrailingComments: 1
+
+SpaceBeforeJsonColon: false
+SpaceBeforeCaseColon: false
+SpaceBeforeCtorInitializerColon: true
+SpaceBeforeInheritanceColon: true
+SpaceBeforeRangeBasedForLoopColon: true
+
+SpaceBeforeCpp11BracedList: true
+SpaceBeforeSquareBrackets: false
+
+SpacesInAngles: Never
+SpacesInParens: Never
+SpacesInSquareBrackets: false
+SpaceInEmptyBlock: false
+
+# SpaceBeforeParens: ControlStatements # (!deprecated)
+# SpacesInCStyleCastParentheses: false # (!deprecated)
+# SpacesInParentheses: false # (!deprecated)
+
 # [Break]
-# AlwaysBreakTemplateDeclarations: true # (!rename)
 BreakTemplateDeclarations: Yes
-# AlwaysBreakAfterReturnType: false # (!rename)
-# BreakAfterReturnType: false # [!change]
 AlwaysBreakBeforeMultilineStrings: false
 BreakBeforeConceptDeclarations: Always
 BreakBeforeBinaryOperators: All
@@ -162,6 +173,9 @@ BreakFunctionDefinitionParameters: false
 BreakConstructorInitializers: BeforeComma
 BreakArrays: false
 BreakAdjacentStringLiterals: true
+# AlwaysBreakTemplateDeclarations: true # (!rename)
+# AlwaysBreakAfterReturnType: false # (!rename)
+# BreakAfterReturnType: false # [!change]
 
 CompactNamespaces: false
 # KeepEmptyLinesAtTheStartOfBlocks: false # (!deprecated)
@@ -193,10 +207,6 @@ IntegerLiteralSeparator:
   DecimalMinDigits: 7
   Hex: 4
   HexMinDigits: 9
-
-QualifierAlignment: Custom
-QualifierOrder:
-  ["static", "inline", "friend", "constexpr", "type", "const", "volatile"]
 
 IncludeBlocks: Merge
 IncludeCategories:
